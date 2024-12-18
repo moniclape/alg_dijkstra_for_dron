@@ -67,7 +67,7 @@ vector<int> restore_path(int start, int end, const vector<int>& prev){
                                                                     };
                                                                     
                                                                     vector<double> distances = {
-                                                                        3, 5, 1
+                                                                        3, 5, 1 //км
                                                                     };
                                                                     int n = 3;//кол of вершин
 /* До сюда, дальше нельзя!!!!!!!! */ 
@@ -103,7 +103,7 @@ vector<int> restore_path(int start, int end, const vector<int>& prev){
         vector<int> path = restore_path(start, end, prev);
         cout << "Маршрут быстрой пути: ";
         for (size_t i = 0; i < path.size(); ++i){
-            cout << path[i];
+            cout << path[i]; //ответ выходит в МИНУТАХ, если ответ вышел не правильно наверно вы не перевели часы в МИНУТЫ!!!!!!
             if (i < path.size() - 1) cout << " - ";
         }cout << endl;
     }
