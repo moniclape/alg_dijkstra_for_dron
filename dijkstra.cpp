@@ -103,7 +103,7 @@ vector<int> restore_path(int start, int end, const vector<int>& prev){
         vector<int> path = restore_path(start, end, prev);
         cout << "Маршрут быстрой пути: ";
         for (size_t i = 0; i < path.size(); ++i){
-            cout << path[i]; //ответ выходит в МИНУТАХ, если ответ вышел не правильно наверно вы не перевели часы в МИНУТЫ!!!!!!
+            cout << path[i]; //ответ выходит в МИНУТАХ, если ваш ответ вышел не правильно наверно вы не перевели часы в МИНУТЫ (когда считали)!!!!!!
             if (i < path.size() - 1) cout << " - ";
         }cout << endl;
     }
