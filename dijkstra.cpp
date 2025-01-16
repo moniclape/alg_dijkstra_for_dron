@@ -59,7 +59,7 @@ vector<int> restore_path(int start, int end, const vector<int>& prev){
     
     
 /* От сюда можно изменять значения для составления маршрута (то есть ввиде графа)*/
-                                                                    //расстояния между док-станциями
+                                                                    //ребра док станций
                                                                     vector<pair<int, int>> connections = {
                                                                         {0, 1}, // начало до A
                                                                         {0, 2}, // начало до B
@@ -70,7 +70,7 @@ vector<int> restore_path(int start, int end, const vector<int>& prev){
                                                                         3, 5, 1 //км
                                                                     };
                                                                     int n = 3;//кол of вершин
-/* До сюда, дальше нельзя!!!!!!!! */ 
+/* До сюда */ 
 
 
 
@@ -103,7 +103,7 @@ vector<int> restore_path(int start, int end, const vector<int>& prev){
         vector<int> path = restore_path(start, end, prev);
         cout << "Маршрут быстрой пути: ";
         for (size_t i = 0; i < path.size(); ++i){
-            cout << path[i]; //ответ выходит в МИНУТАХ, если ваш ответ вышел не правильно наверно вы не перевели часы в МИНУТЫ (когда считали)!!!!!!
+            cout << path[i];
             if (i < path.size() - 1) cout << " - ";
         }cout << endl;
     }
